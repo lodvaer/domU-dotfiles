@@ -2,7 +2,7 @@
 
 set -eu
 
-if [ "$(stat -c %i $0)" != "$(stat -c %i ~/.config/install.sh)" ]; then
+if [ ! "$0" -ef ~/.config/install.sh ]; then
 	echo "Repository must be linked to ~/.config." >&2
 	exit 1
 fi
