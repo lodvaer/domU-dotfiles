@@ -1,0 +1,8 @@
+case $- in
+*i*)
+	test -n "$NOZSH" && return
+	if command -v zsh >/dev/null 2>&1; then
+		exec zsh
+	fi
+	;;
+esac

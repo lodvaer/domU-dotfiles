@@ -1,0 +1,6 @@
+EDITOR=vi
+SHELL=sh
+LESSHISTFILE=-
+PATH=$HOME/bin:/usr/local/bin:/bin
+
+export EDITOR SHELL LESSHISTFILE PATH
